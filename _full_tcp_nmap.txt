@@ -1,0 +1,53 @@
+# Nmap 7.92 scan initiated Fri Dec 10 10:07:07 2021 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/beed2112/hackclub/results/dirty.hc/scans/_full_tcp_nmap.txt -oX /home/beed2112/hackclub/results/dirty.hc/scans/xml/_full_tcp_nmap.xml dirty.hc
+adjust_timeouts2: packet supposedly had rtt of -191732 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191732 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -442627 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -442627 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -192016 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -192016 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191568 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191568 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191375 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191375 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191901 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -191901 microseconds.  Ignoring time.
+Nmap scan report for dirty.hc (192.168.3.17)
+Host is up, received user-set (0.059s latency).
+Scanned at 2021-12-10 10:07:08 MST for 42s
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+21/tcp open  ftp     syn-ack ttl 63 vsftpd (Misconfigured)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.2.9 ((Debian) PHP/5.2.6-1+lenny16 with Suhosin-Patch mod_ruby/1.2.6 Ruby/1.8.7(2008-08-11) mod_perl/2.0.4 Perl/v5.10.0)
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny16 with Suhosin-Patch mod_ruby/1.2.6 Ruby/1.8.7(2008-08-11) mod_perl/2.0.4 Perl/v5.10.0
+Device type: printer|general purpose|switch|firewall|security-misc|media device|WAP
+Running (JUST GUESSING): Kyocera embedded (96%), Linux 2.6.X (95%), Extreme Networks ExtremeXOS 12.X (94%), Barracuda Networks embedded (94%), Sony embedded (92%), Cisco embedded (91%), AVM embedded (91%), Canon embedded (91%)
+OS CPE: cpe:/h:kyocera:cs-2560 cpe:/o:linux:linux_kernel:2.6.26 cpe:/o:extremenetworks:extremexos:12.5.4 cpe:/o:linux:linux_kernel:2.6 cpe:/h:cisco:sa520 cpe:/h:avm:fritz%21box_fon_wlan_7170 cpe:/h:canon:imagerunner_advance_c5051
+Aggressive OS guesses: Kyocera CopyStar CS-2560 printer (96%), Linux 2.6.26 (95%), Extreme Networks ExtremeXOS 12.5.4 (94%), Linux 2.6.15 - 2.6.26 (likely embedded) (94%), Barracuda Web Application Firewall 460 (94%), Linux 2.6.15 (Ubuntu) (94%), Linux 2.6.16 (94%), Linux 2.6.9 - 2.6.18 (93%), Barracuda Web Filter (93%), Linux 2.6.22 (93%)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=12/10%OT=21%CT=1%CU=42181%PV=Y%DS=2%DC=I%G=Y%TM=61B389
+OS:66%P=x86_64-pc-linux-gnu)SEQ(SP=CD%GCD=1%ISR=D2%TI=Z%TS=8)OPS(O1=M564ST1
+OS:1NW6%O2=M564ST11NW6%O3=M564NNT11NW6%O4=M564ST11NW6%O5=M564ST11NW6%O6=M56
+OS:4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R=Y%DF=Y%T
+OS:=40%W=16D0%O=M564NNSNW6%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T
+OS:2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N
+OS:)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+OS:U1(R=N)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 132.245 days (since Sat Jul 31 04:14:42 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=205 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Unix
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   58.90 ms dirty.hc (192.168.3.17)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 10 10:07:50 2021 -- 1 IP address (1 host up) scanned in 43.50 seconds

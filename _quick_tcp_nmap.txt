@@ -1,0 +1,50 @@
+# Nmap 7.92 scan initiated Fri Dec 10 10:07:07 2021 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN /home/beed2112/hackclub/results/dirty.hc/scans/_quick_tcp_nmap.txt -oX /home/beed2112/hackclub/results/dirty.hc/scans/xml/_quick_tcp_nmap.xml dirty.hc
+adjust_timeouts2: packet supposedly had rtt of -693522 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -693522 microseconds.  Ignoring time.
+Nmap scan report for dirty.hc (192.168.3.17)
+Host is up, received user-set (0.060s latency).
+Scanned at 2021-12-10 10:07:08 MST for 14s
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+21/tcp open  ftp     syn-ack ttl 63 vsftpd (Misconfigured)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.2.9 ((Debian) PHP/5.2.6-1+lenny16 with Suhosin-Patch mod_ruby/1.2.6 Ruby/1.8.7(2008-08-11) mod_perl/2.0.4 Perl/v5.10.0)
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny16 with Suhosin-Patch mod_ruby/1.2.6 Ruby/1.8.7(2008-08-11) mod_perl/2.0.4 Perl/v5.10.0
+Device type: printer|general purpose|broadband router|switch|VoIP phone|firewall|security-misc
+Running (JUST GUESSING): Kyocera embedded (95%), Linux 2.6.X (93%), D-Link embedded (93%), Canon embedded (91%), Extreme Networks ExtremeXOS 12.X (91%), Thomson embedded (91%), Barracuda Networks embedded (91%), Cisco embedded (88%)
+OS CPE: cpe:/h:kyocera:cs-2560 cpe:/o:linux:linux_kernel:2.6.26 cpe:/h:dlink:dsl-2540b cpe:/h:canon:imagerunner_advance_c5051 cpe:/o:extremenetworks:extremexos:12.5.4 cpe:/o:linux:linux_kernel:2.6 cpe:/h:cisco:sa520
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+Aggressive OS guesses: Kyocera CopyStar CS-2560 printer (95%), Linux 2.6.26 (93%), Linux 2.6.24 (Debian) (93%), D-Link DSL-2540B ADSL router (93%), Linux 2.6.15 - 2.6.26 (likely embedded) (93%), Linux 2.6.16 (93%), Canon imageRUNNER ADVANCE C5051 printer (91%), Extreme Networks ExtremeXOS 12.5.4 (91%), Linux 2.6.28 (Ubuntu) (91%), Thomson Symbio VoIP phone (91%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.92%E=4%D=12/10%OT=21%CT=1%CU=%PV=Y%G=N%TM=61B3894A%P=x86_64-pc-linux-gnu)
+SEQ(SP=C4%GCD=1%ISR=D1%TI=Z%TS=8)
+OPS(O1=M564ST11NW6%O2=M564ST11NW6%O3=M564NNT11NW6%O4=M564ST11NW6%O5=M564ST11NW6%O6=M564ST11)
+WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)
+ECN(R=Y%DF=Y%TG=40%W=16D0%O=M564NNSNW6%CC=N%Q=)
+T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%TG=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T5(R=N)
+T6(R=N)
+T7(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=40%CD=S)
+
+Uptime guess: 132.245 days (since Sat Jul 31 04:14:42 2021)
+TCP Sequence Prediction: Difficulty=196 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Unix
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   59.67 ms dirty.hc (192.168.3.17)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 10 10:07:22 2021 -- 1 IP address (1 host up) scanned in 14.79 seconds

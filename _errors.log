@@ -1,0 +1,6 @@
+[*] Service scan Curl Robots (tcp/80/http/curl-robots) ran a command which returned a non-zero exit code (22).
+[-] Command: curl -sSikf http://dirty.hc:80/robots.txt
+[-] Error Output:
+curl: (22) The requested URL returned error: 404
+
+
